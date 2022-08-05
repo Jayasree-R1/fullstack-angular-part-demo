@@ -1,0 +1,48 @@
+
+<div class="row">
+    <div class="col-md-2 ">
+    
+    </div>
+
+    <div class="col-md-8">
+      <h2> User Details</h2>
+       <button class="btn btn-danger"> Add User</button>
+    <br/>
+   
+    
+    <br>
+     <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Id</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Qulification</th>
+           <th>Address</th>
+           <th>Age</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+    
+    
+        <tbody>
+        <tr *ngFor="let user of userList">
+          <td >{{user.userId}}</td>
+          <td>{{user.firstName}}</td>
+          <td>{{user.lastName}}</td>
+          <td>{{user.qulification}}</td>
+           <td>{{user.address}}</td>
+           <td>{{user.age}}</td>
+          <td><button class="btn btn-danger"> Delete</button>
+            <button class="btn btn-danger"  style="margin-left: 20px;"> Edit</button></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  
+    
+    </div>
+    
+    
+    
