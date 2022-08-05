@@ -1,0 +1,11 @@
+
+
+When the component loads 
+ - The constructor executes first present in component.ts file 
+ - next ngOnit() method executes
+
+This is because the performance/logic to fetch Data from DB 
+through APIs is writtent in constructor and ngOnit
+
+constructor(private formBuilder: FormBuilder) {} => this means it imports other class objects/variables
+after injecting use them with this.
